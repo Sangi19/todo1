@@ -1,0 +1,15 @@
+.container {
+    background-color: gray;
+    width: 25px auto;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+}
+
+.header {
+    padding-top: 5px;
+}
+
+body {
+    margin: 20px auto;
+}
