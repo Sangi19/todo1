@@ -7,4 +7,13 @@ addBtn.addEventListener('click',function() {
     paragraph.innerText=input.value; //takes the input value and saves it in paragraph's innertext
     toDoContainer.appendChild(paragraph); //paragraph Element is appended from toDoContainer
 
+    input.value=""; //empty the textbox once a task is added
+
+    paragraph.addEventListener('click', function() {
+        paragraph.style.textDecoration="line-through";  //strike through in the task by single click
+        })
+        
+        paragraph.addEventListener('dblclick', function() {
+        toDoContainer.removeChild(paragraph); //delete a task by double click
+        })
 })
