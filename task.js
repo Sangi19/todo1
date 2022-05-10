@@ -7,7 +7,7 @@ addBtn.addEventListener('click',function() {
     paragraph.innerText=input.value; //takes the input value and saves it in paragraph's innertext
     console.log(input.value); 
     toDoContainer.appendChild(paragraph); //paragraph Element is appended from toDoContainer
-
+    console.log(paragraph)
     input.value=""; //empty the textbox once a task is added
 
     paragraph.addEventListener('click', function() {
